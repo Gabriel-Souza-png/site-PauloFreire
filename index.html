@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrãozinho</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="mostrarLocal(0)">
+    <header>
+        <span class="span">🏙️CARRÃOZINHO</span>
+        <nav>
+
+            <a href="#principal">Inicio</a>
+            <a href="#mapa">Mapa</a>
+            <a href="#linha_tempo">Linha do tempo</a>
+            <a href="#entrevista">Entrevista</a>
+        </nav>
+    </header>
+
+    <div id="principal">
+        <h1>CARRÃOZINHO</h1>
+        <h2>HISTÓRIAS , MEMÓRIAS E TRANSFORMAÇÕES</h2>
+        <p>Este projeto reúne memórias , fotos e relatos de moradores para mostrar como o bairro Carrãozinho mudou ao
+            longo do tempo</p>
+    </div>
+    <!--MAPA -->
+    <section id="mapa">
+        <h1>Mapa interativo</h1>
+        <p>Clique nos pontos para ver informações</p>
+        <section class="mapa">
+            <img src="img/mapa.png" alt="Mapa">
+
+            <div class="pin" style="top: 25%; left: 38%;" onclick="mostrarLocal(1)"></div>
+            <div id="azul" class="pin" style="top: 53%; left: 84%;" onclick="mostrarLocal(2)"></div>
+            <div id="verde" class="pin" style="top: 80%; left: 80%;" onclick="mostrarLocal(0)"></div>
+        </section>
+        <div class="indice">
+
+            <div class="item-indice">
+                <span class="bolinha"></span>
+                Nova Era
+            </div>
+
+            <div class="item-indice">
+                <span class="bolinha" style="background: blue;"></span>
+                Super Mercado
+            </div>
+
+            <div class="item-indice">
+                <span class="bolinha" style="background: green;"></span>
+                Praça
+            </div>
+
+        </div>
+        <section id="painel">
+            <div class="imagens">
+
+                <div class="card">
+                    <h2>Antigamente</h2>
+                    <img itemid="img-antiga" src="" alt="" id="img-antiga">
+                </div>
+
+                <div class="card">
+                    <h2>Hoje</h2>
+                    <img id="img-hoje" src="" alt="" id="img-atual">
+                </div>
+            </div>
+
+            <div class="descricao">
+                <h1 id="titulo-local"></h1>
+                <p id="texto-local"></p>
+            </div>
+        </section>
+    </section>
+
+
+    <section id="linha_tempo">
+        <h1>LINHA DO TEMPO</h1>
+        <div class="container_tempo">
+            <div class="aba">
+                <h2>2010</h2>
+                <p>
+                    Uma via tranquila de casas térreas e comércio estritamente local de bairro.
+                </p>
+                <img src="img/2010.png" alt="Bairro em 2010">
+            </div>
+
+            <div class="aba">
+                <h2>2018</h2>
+                <p>Consolidação como eixo de serviços e imobiliárias, refletindo a valorização da Zona Leste.
+
+                </p>
+                <img src="img/2018.png" alt="Bairro em 2018">
+
+            </div>
+
+            <div class="aba">
+                <h2>2025</h2>
+                <p>Valorização pelo entorno moderno, com melhorias na drenagem (Córrego Caguaçu) e proximidade ao transporte de massa.
+                </p>
+
+                <img src="img/2025.png" alt="Bairro em 2025">
+
+            </div>
+
+
+        </div>
+    </section>
+
+    <section id="entrevista">
+        <h1>ENTREVISTA</h1>
+        <div class="card-entrevistado">
+            <img src="img/foto-entrevistado.jpeg" alt="Entrevistado">
+            <h1 id="nome-entrevistado">Elias Gabriel</h1>
+            <p id="descricao-entrevistado">Morador do Carrãozinho há 42 anos.</p>
+        </div>
+
+        <div class="card-entrevista">
+            <h1 class="pergunta">"Como era o Carrãozinho antigamente?"</h1>
+            <p class="resposta">"Bem, quando cheguei no Carrãozinho em 16 de Setembro de 1982, era um bairro muito
+                precário, novo, com pouca infraestrutura."</p>
+        </div>
+        <div class="card-entrevista">
+            <h1 class="pergunta">"Existe algum problema no bairro que incomoda os moradores?"</h1>
+            <p class="resposta">"Sim. Talvez um dos principais problmeas é a falta de respeito, alguns colocam sons
+                muitos altos que acaba pertubando o sossego da comunidade."</p>
+        </div>
+        <div class="card-entrevista">
+            <h1 class="pergunta">"O que você gostaria que melhorasse no Carrãozinho?"</h1>
+            <p class="resposta">"A principal coisa que eu gostaria que melhorasse é a infraestrutura urbanística, e uma
+                melhoria na acessibilidade também."</p>
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
